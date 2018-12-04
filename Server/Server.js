@@ -2,25 +2,21 @@
 var express = require('express');
 var fs = require('fs');
 var https = require('https');
-var mysql = require('mysql');
+var mongodb = require('mongodb');
 var session = require('express-session');
 
 var app = express();
 
-var dbCon = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    port: 3306,
-    database: "db_SliitInternship"
-});
+var mongoClient = mongodb.MongoClient;
+var url = "mongodb://localhost:27017/";
 
-dbCon.connect(function(err)
+mongoClient.connect(url, {useNewUrlParser: true}, function(err, db)
 {
     if(err)
-        console.log(err);
-    else
-        console.log("Connected to the SLIIT internship database.");
+        throw err;
+    //var dbo = db.db("db_SliitInternship");
+    console.log("Database created!");
+    db.close();
 });
 
 var server = app.listen(8080, function()
