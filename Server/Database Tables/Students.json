@@ -1,0 +1,1 @@
+{"_id":{"$oid":"5c0b4ae7a7919d7ac90de667"},"SID":1.0,"password":"abcd1234","faculty":"Computing","phone":["0123456789","0112943344"],"email":["john@gmail.com","john@yahoo.com"],"graduation_date":{"$date":"2018-02-01T00:00:00.000Z"},"aptitude_score":25.0}
