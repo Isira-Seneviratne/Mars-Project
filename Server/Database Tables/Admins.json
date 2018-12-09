@@ -1,1 +1,7 @@
-{"_id":{"$oid":"5c0b4c6da7919d7ac90de668"},"AID":1.0,"faculty":"Computing","password":"12qwaszx","email":["henry@gmail.com","henry@yahoo.com"]}
+{
+    "_id":{"$oid":"5c0b4c6da7919d7ac90de668"},
+    "AID":1.0,
+    "faculty":"Computing",
+    "password":"12qwaszx",
+    "email":["henry@gmail.com","henry@yahoo.com"]
+}

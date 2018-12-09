@@ -1,1 +1,7 @@
-{"_id":{"$oid":"5c0b4e7f53ef86a67f411800"},"IID":1.0,"position":"Software Engineer","duration_years":1.0,"company":"Virtusa","salary":15000.0}
+{
+    "_id":{"$oid":"5c0b4e7f53ef86a67f411800"},
+    "IID":1.0,
+    "position":"Software Engineer",
+    "duration_years":1.0,"company":"Virtusa",
+    "salary":15000.0
+}
