@@ -1,0 +1,7 @@
+{
+    "_id":{"$oid":"5c13b5d5213a4cd9b7d41ae0"},
+    "QID":1.0,
+    "question_name":"What is the maximum number of classes a Java class can inherit from?",
+    "possible_answers":["1","2","3"],
+    "answer":"1"
+}
