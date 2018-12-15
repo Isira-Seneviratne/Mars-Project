@@ -1,0 +1,2 @@
+type npm -i to install the relavant modules.
+Then ng serve -open to open the angular web project.
