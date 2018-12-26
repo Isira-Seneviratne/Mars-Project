@@ -7,10 +7,11 @@
         
       </div>
   
-      <div class="row" >
-       
+      <div class="row" >       
         <div class="col-lg-5 col-md-6 col-sm-8 ml-auto mr-auto" >
-          <form class="form" method="" action="#">
+
+          <!-- Login Form -->
+          <form class="form" (submit)="login()" >
             <div class="card card-login card-hidden" id="loginDetails">
   
               <div class="card-body ">
@@ -19,17 +20,17 @@
                     <div class="input-group">
                       <div class="input-group-prepend">
                         <span class="input-group-text">
-                          <i class="material-icons">email</i>
+                          <i class="material-icons">account_circle</i>
                         </span>
                       </div>
-                      <input type="email" class="form-control" placeholder="IndexNumber...">
+                      <input type="text" class="form-control" placeholder="Index Number...">
                     </div>
                   </span>
                 <span class="bmd-form-group">
                     <div class="input-group">
                       <div class="input-group-prepend">
                         <span class="input-group-text">
-                          <i class="material-icons">lock_outline</i>
+                          <i class="material-icons">lock</i>
                         </span>
                       </div>
                       <input type="password" class="form-control" placeholder="Password...">
