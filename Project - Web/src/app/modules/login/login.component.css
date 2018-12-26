@@ -1,0 +1,221 @@
+.pad{
+    padding: 10px;
+  }
+  #sliitLogo{
+       width: 300px;
+      margin-top: 20px;
+   }
+  #loginTitle{
+      margin-left: 380px
+  }
+  #secondRow{
+      width:100%; height: 100px; margin-top: 95px
+  }
+  #loginDetails{
+      margin-left: 300px;
+
+  }
+  #background{
+      background-image: url('/assets/images/backgroundImg.jpg');
+      background-size: cover;
+      background-position: top center;
+      width: 100%;
+      height: 540px;
+  }
+  #forgetPassword{
+     margin-left: 250px;
+  }
+  #acuntYet{
+      margin-left: 40px;
+      margin-top: -10px;
+  }
+  #social{
+      margin-left: -750px;
+      margin-top:40px;
+  }
+
+  #marsLogo{
+      height:72px;
+      width:200px;
+      margin-top: -20px;
+  }
+
+  @media screen and (max-width: 414px) {
+      /*.col-25, .col-75, input[type=submit] {*/
+      /*width: 100%;*/
+      /*margin-top: 0;*/
+      /*}*/
+      #sliitLogo{
+
+          width: 300px;
+          height: 100px;
+          margin-left: 30px;
+          filter: brightness(1.0);
+      }
+      #loginTitle{
+          margin-left: 50px;
+
+      }
+      #nameLoging{
+          font-size: 45px;
+      }
+      #loginDetails{
+          margin-left: 20px;
+          margin-top:130px;
+          width: 350px;
+      }
+      #background{
+          height:700px;
+      }
+      #forgetPassword{
+          margin-left: 160px;
+      }
+      #acuntYet{
+           margin-left: 10px;
+      }
+
+      #footerStyle{
+          margin-left: 30px;
+      }
+
+      #copyright{
+          position: absolute;
+          margin-top: 50px;
+          margin-left: 30px;
+      }
+      #social{
+          margin-left: 20px;
+          margin-top:100px;
+      }
+
+      #marsLogo{
+          height:52px;
+          width:150px;
+          margin-top: -10px;
+      }
+  }
+  @media screen and (max-width: 375px) {
+
+
+      #marsLogo{
+          height:52px;
+          width:150px;
+          margin-top: -10px;
+      }
+      #sliitLogo{
+
+          margin-top: -20px;
+          width: 250px;
+          height: 75px;
+          margin-left: 60px;
+          filter: brightness(1.0);
+
+      }
+      #loginTitle{
+
+          margin-left: 70px;
+
+      }
+      #nameLoging{
+          font-size: 36px;
+      }
+      #loginDetails{
+          margin-left: 5px;
+          margin-top:100px;
+          width: 330px;
+      }
+      /*#background{*/
+      /*height:700px;*/
+      /*}*/
+      #forgetPassword{
+          margin-left: 140px;
+      }
+      /*#acuntYet{*/
+      /*margin-left: 10px;*/
+      /*}*/
+
+      #footerStyle{
+          margin-left: -10px;
+          /*font-size: 10px;*/
+      }
+      .footStyle{
+          font-size: 14px;
+      }
+
+      #copyright{
+          position: absolute;
+          margin-top: 100px;
+          margin-left: 5px;
+      }
+
+      #social{
+          margin-left: 20px;
+          margin-top:170px;
+      }
+      #register{
+          margin-left: 20px;
+      }
+  }
+
+  @media screen and (max-width: 320px) {
+
+
+      #marsLogo{
+          height:52px;
+          width:150px;
+          margin-top: -10px;
+      }
+      #sliitLogo{
+
+          margin-top: -20px;
+          width: 250px;
+          height: 75px;
+          margin-left: 40px;
+          filter: brightness(1.0);
+
+      }
+      #loginTitle{
+
+          margin-left: 60px;
+
+      }
+      #nameLoging{
+          font-size: 30px;
+      }
+      #loginDetails{
+          margin-left: 5px;
+          margin-top:80px;
+          width: 280px;
+      }
+      /*#background{*/
+      /*height:700px;*/
+      /*}*/
+      #forgetPassword{
+          margin-left: 95px;
+      }
+      /*#acuntYet{*/
+      /*margin-left: 10px;*/
+      /*}*/
+
+      #footerStyle{
+          margin-left: -30px;
+          /*font-size: 10px;*/
+      }
+      .footStyle{
+          font-size: 12px;
+      }
+
+      #copyright{
+          position: absolute;
+          margin-top: 100px;
+          margin-left: 0px;
+      }
+
+      #social{
+          margin-left: 20px;
+          margin-top:170px;
+      }
+      #register{
+          margin-left: 20px;
+      }
+  }
