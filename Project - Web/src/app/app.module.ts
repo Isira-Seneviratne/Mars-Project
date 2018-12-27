@@ -9,7 +9,7 @@ import { LoginComponent} from './modules/login/login.component';
 import { HeaderComponent } from './core/header/header.component';
 import { HomeComponent } from './modules/home/home.component';
 import { FooterComponent } from './core/footer/footer.component';
-import { ContactComponent } from './modules/contact/contact.component';
+import { ContactUsComponent } from './modules/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import { ContactComponent } from './modules/contact/contact.component';
     HeaderComponent,
     HomeComponent,
     FooterComponent,
-    ContactComponent
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,

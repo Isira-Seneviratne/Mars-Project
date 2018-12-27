@@ -5,12 +5,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { LoginComponent} from './modules/login/login.component';
 import { HomeComponent } from './modules/home/home.component';
-import { ContactComponent } from './modules/contact/contact.component';
+import { ContactUsComponent } from './modules/contact-us/contact-us.component';
 
 const routes: Routes = [
     { path: '', component: HomeComponent, pathMatch: 'full' },
     { path: 'login', component: LoginComponent },
-    { path: 'contact', component: ContactComponent }
+    { path: 'contact', component: ContactUsComponent }
 ];
 
 

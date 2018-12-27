@@ -1,50 +1,68 @@
 <div class="page-header header-filter" id="background" >
-    <div class="container">
-      <div class="row"   id="secondRow" style="">
-        <img src="../../../assets/images/sliitlogo.png" id="sliitLogo">
-        <span id="loginTitle"><h1 class="title" id="nameLoging"><b>Student Login</b></h1></span>
-      </div>
 
-      <div class="row" >
-        <div class="col-lg-5 col-md-6 col-sm-8 ml-auto mr-auto" >
-          <!-- Login Form -->
-          <form class="form" (submit)="login()" >
-            <div class="card card-login card-hidden" id="loginDetails">
-              <div class="card-body ">
-                <span class="bmd-form-group">
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text">
-                          <i class="material-icons">account_circle</i>
-                        </span>
-                      </div>
-                      <input type="text" class="form-control" placeholder="SLIIT ID">
-                    </div>
-                  </span>
-                <span class="bmd-form-group">
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text">
-                          <i class="material-icons">lock</i>
-                        </span>
-                      </div>
-                      <input type="password" class="form-control" placeholder="Password">
-                    </div>
-                </span>
-                <a href="examples/login-page.html" class="btn btn-link btn-primary " target="_blank" id="forgetPassword">Forget Password ?</a>
-              </div>
 
-              <div class="card-footer justify-content-center">
-                <a href="#pablo"><button class="btn btn-primary btn-round" style="width: 200px; margin-top: -10px">Login</button></a>
-              </div>
-              <div class="tim-typo" id="noAccountYet">
-                <h6>
-                 Don't have an account yet?</h6>
-              </div>
-              <a href="examples/login-page.html" class="btn btn-link btn-primary " target="_blank" style="margin-top: -50px">SIGN UP</a>
-            </div>
-          </form>
-        </div>
-      </div>
+
+  <div class="container">
+    <div class="row"   id="secondRow" style="">
+      <img src="assets/images/sliitlogo.png"  id="sliitLogo">
+     
+     
+      <!-- <span style="" id="loginTitle"> <h1 class="title" id="nameLoging"><b>Student Login </b></h1> </span> -->
+      
+      
+      <!--<div class="tim-typo" >-->
+        <!--<h2 class="title" style="margin-left: 400px">-->
+          <!--Student Login-->
+        <!--</h2>-->
+      <!--</div>-->
     </div>
+
+     <div class="row"  style="">
+      <!--<img src="images/sliitlogo.png" style=" ">-->
+      <div class="col-lg-5 col-md-6 col-sm-8 ml-auto mr-auto" >
+        <form class="form" method="" action="#">
+          <div class="card card-login card-hidden" id="loginDetails">
+
+            <div class="card-body " >
+
+              <span class="bmd-form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="material-icons">email</i>
+                      </span>
+                    </div>
+                    <input type="email" class="form-control" placeholder="IndexNumber...">
+                  </div>
+                </span>
+              <span class="bmd-form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="material-icons">lock_outline</i>
+                      </span>
+                    </div>
+                    <input type="password" class="form-control" placeholder="Password...">
+                  </div>
+              </span>
+              <a href="examples/login-page.html" class="btn btn-link btn-primary " target="_blank" id="forgetPassword">Forget Password ?</a>
+
+            </div>
+            <div class="card-footer justify-content-center">
+
+              <!--<a href="#pablo" class="btn btn-rose btn-link btn-lg">Lets Go</a>-->
+              <a href="#pablo"  ><button class="btn btn-primary btn-round" style="width: 200px; margin-top: -10px ;background-color: orangered">Login</button></a>
+            </div>
+            <div class="tim-typo" id="acuntYet">
+              <h6 >
+               Have not account yet?</h6>
+            </div>
+            <a href="examples/login-page.html" class="btn btn-link btn-primary " target="_blank" style="margin-top: -50px;color: orangered">SIGN UP</a>
+
+          </div>
+        </form>
+      </div>
+    </div> 
   </div>
+
+</div>

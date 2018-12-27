@@ -2,9 +2,15 @@
     padding: 10px;
   }
   #sliitLogo{
-      width: 300px;
-      margin-top: 20px;
+      margin-left: 20px;
+       width: 306px;
+       height: 117px;
+       margin-top: 290px;
    }
+  
+   .boader:focus {
+      border-color: orangered;
+    }
   #loginTitle{
       margin-left: 380px
   }
@@ -13,6 +19,7 @@
   }
   #loginDetails{
       margin-left: 300px;
+      margin-top: -10px;
   }
   #background{
       background-image: url('/assets/images/backgroundImg.jpg');
@@ -23,15 +30,17 @@
   }
   #forgetPassword{
      margin-left: 250px;
+     color: orangered;
   }
-  #noAccountYet{
-      margin-left: 25px;
+  #acuntYet{
+      margin-left: 40px;
       margin-top: -10px;
   }
   #social{
       margin-left: -750px;
       margin-top:40px;
   }
+
   #marsLogo{
       height:72px;
       width:200px;
@@ -92,8 +101,9 @@
           margin-top: -10px;
       }
   }
-
   @media screen and (max-width: 375px) {
+
+
       #marsLogo{
           height:52px;
           width:150px;
@@ -155,6 +165,8 @@
   }
 
   @media screen and (max-width: 320px) {
+
+
       #marsLogo{
           height:52px;
           width:150px;
