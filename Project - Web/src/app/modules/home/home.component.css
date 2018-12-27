@@ -1,8 +1,7 @@
-.myCardCss{
+.myCardCss {
+  max-width: 760px; height: 330px ;margin-top: 0px
+}
 
-    max-width: 760px; height: 330px ;margin-top: 0px
-  }
-
-  .pad{
-    padding: 10px;
-  }
+.pad {
+  padding: 10px;
+}
