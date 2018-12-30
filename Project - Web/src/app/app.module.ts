@@ -24,12 +24,7 @@ import { InternshipPageComponent } from './modules/internship-page/internship-pa
     HeaderComponent,
     HomeComponent,
     FooterComponent,
-    ContactUsComponent,
-    StudentInternshipFormComponent,
-    CompaniesComponent,
-    CompanyComponent,
-    InternshipPageComponent,
-    
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
