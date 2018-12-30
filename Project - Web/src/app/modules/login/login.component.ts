@@ -16,10 +16,8 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
-
   // Login function
   login() {
-
     const user = 2;
   }
 }

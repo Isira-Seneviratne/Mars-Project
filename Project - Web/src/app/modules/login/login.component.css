@@ -7,7 +7,7 @@
        height: 117px;
        margin-top: 290px;
    }
-  
+
    .boader:focus {
       border-color: orangered;
     }
@@ -32,7 +32,7 @@
      margin-left: 250px;
      color: orangered;
   }
-  #acuntYet{
+  #accountYet{
       margin-left: 40px;
       margin-top: -10px;
   }
