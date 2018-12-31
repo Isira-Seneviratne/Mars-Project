@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +12,10 @@ export class LoginComponent implements OnInit {
   // Ng form
   @ViewChild('loginForm') form:any;
 
-  constructor() { }
+  loginIndex:String;
+  loginPassword:String;
+
+  constructor(private router:Router) { }
 
   ngOnInit() {
   }
@@ -20,6 +24,9 @@ export class LoginComponent implements OnInit {
   // Login function
   login() {
 
-    const user = 2;
+    const user = {
+      id:this.loginIndex,
+      password:this.loginPassword
+    };
   }
 }
