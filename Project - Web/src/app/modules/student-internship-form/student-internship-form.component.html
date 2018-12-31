@@ -1,0 +1,89 @@
+<div class="page-header header-filter" data-parallax="true" style="background-image: url('assets/images/background.jpg')">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-8 ml-auto mr-auto">
+              <div class="brand text-center">
+                  <h1 class="title">The <span style="color: red">expert</span>
+                  <br>in anything was once a
+                  <br><span style=" color: red">beginner</span></h1>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="main main-raised" id="main">
+  <div class="contact-content">
+      <div class="container">
+          <h2 class="title" style="text-align: center">Internship Application Form</h2>
+          <p class="text-info" style="text-align: center">
+              Please fill in the following details:
+          </p>
+          <div class="row" style="margin-left: 300px;">
+              <div class="col-md-6">
+                  <br>
+                  <br>
+                  <form role="form" id="contact-form" method="post">
+                      <div class="form-group">
+                          <label for="selectCompany">Select Company</label>
+                          <select class="form-control selectpicker sizes" data-style="btn btn-link" id="selectCompany">
+                              <option>Pearson</option>
+                              <option>IFS</option>
+                              <option>99X</option>
+                              <option>MIT</option>
+                          </select>
+                      </div>
+                      <div class="form-group">
+                          <label for="selectInternship">Select Internship</label>
+                          <select class="form-control selectpicker sizes" data-style="btn btn-link" id="selectInternship">
+                              <option>Developer</option>
+                              <option>QA Engineer</option>
+                              <option>Front Desk Employee</option>
+                              <option>Business Analyst</option>
+                              <option>Test Engineer</option>
+                          </select>
+                      </div>
+                      <div class="form-group">
+                          <label for="internshipDuration">Internship Duration</label>
+                          <select class="form-control selectpicker sizes" data-style="btn btn-link" id="internshipDuration">
+                              <option>3 months</option>
+                              <option>6 months</option>
+                              <option>1 year</option>
+                              <option>1 year and 6 months</option>
+                              <option>2 years</option>
+                          </select>
+                      </div>
+                      <div class="form-group sizes">
+                          <label class="label-control">Graduation Date</label>
+                          <input type="text" class="form-control datetimepicker" placeholder="DD/MM/YYYY"/>
+                          <label class="label-control" style="margin-top: 60px">Tell us when you are expected to graduate</label>
+                          <br>
+                      </div>
+                      <div class="submit text-center" id="buttonGroup">
+                          <input routerLink="/studentInternshipForm" type="submit" class="btn btn-primary btn-raised btn-round" value="Submit" style="background-color:orangered">
+                          <!-- <a  class="btn  btn-rose   btn-round btn-block" style="background-color: orangered"routerLink="/studentInternshipForm">Submit</a> -->
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<script>
+  // -------------Date Time Picker----------
+  $('.datetimepicker').datetimepicker({
+      format: 'MM/YYYY',
+      icons: {
+          time: "fa fa-clock-o",
+          date: "fa fa-calendar",
+          up: "fa fa-chevron-up",
+          down: "fa fa-chevron-down",
+          previous: 'fa fa-chevron-left',
+          next: 'fa fa-chevron-right',
+          today: 'fa fa-screenshot',
+          clear: 'fa fa-trash',
+          close: 'fa fa-remove'
+      }
+  });
+</script>

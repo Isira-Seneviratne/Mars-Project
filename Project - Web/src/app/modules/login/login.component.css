@@ -2,9 +2,15 @@
     padding: 10px;
   }
   #sliitLogo{
-       width: 300px;
-      margin-top: 20px;
+      margin-left: 20px;
+       width: 306px;
+       height: 117px;
+       margin-top: 290px;
    }
+
+   .boader:focus {
+      border-color: orangered;
+    }
   #loginTitle{
       margin-left: 380px
   }
@@ -13,7 +19,7 @@
   }
   #loginDetails{
       margin-left: 300px;
-
+      margin-top: -10px;
   }
   #background{
       background-image: url('/assets/images/backgroundImg.jpg');
@@ -23,9 +29,10 @@
       height: 540px;
   }
   #forgetPassword{
-     margin-left: 250px;
+     margin-left: 110px;
+     color: orangered;
   }
-  #acuntYet{
+  #accountYet{
       margin-left: 40px;
       margin-top: -10px;
   }

@@ -1,75 +1,54 @@
-<div class="page-header header-filter" id="background" >
-
-    <div class="container">
-      <div class="row"   id="secondRow" style="">
-        <img src="../../../assets/images/sliitlogo.png"  id="sliitLogo">
-        <span  id="loginTitle"> <h1 class="title" id="nameLoging"><b>Student Login </b></h1> </span>
-        
-      </div>
-  
-      <div class="row" >       
-        <div class="col-lg-5 col-md-6 col-sm-8 ml-auto mr-auto" >
-
-          <!-- Login Form -->
-          <form class="form" (submit)="login()" #loginForm = "ngForm">
+<div class="page-header header-filter" id="background">
+  <div class="container">
+    <div class="row" id="secondRow" style="">
+      <img src="assets/images/sliitlogo.png" id="sliitLogo">
+      <!-- <span style="" id="loginTitle"> <h1 class="title" id="nameLoging"><b>Student Login </b></h1> </span> -->
+      <!--<div class="tim-typo" >-->
+        <!--<h2 class="title" style="margin-left: 400px">-->
+          <!--Student Login-->
+        <!--</h2>-->
+      <!--</div>-->
+    </div>
+      <div class="row"  style="">
+      <!--<img src="images/sliitlogo.png" style=" ">-->
+        <div class="col-lg-5 col-md-6 col-sm-8 ml-auto mr-auto">
+          <form class="form" method="" action="#">
             <div class="card card-login card-hidden" id="loginDetails">
-  
-              <div class="card-body ">
-  
+              <div class="card-body">
                 <span class="bmd-form-group">
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text">
-                          <i class="material-icons">account_circle</i>
-                        </span>
-                      </div>
-                      <input type="text" class="form-control" placeholder="Index Number..."
-                            name="loginIndex"
-                            [(ngModel)]="loginIndex"
-                            required
-                            pattern="[A-Za-z]{2}[0-9]{8}"
-                            #loginIdVal="ngModel"
-                            [ngClass]="{
-                              'is-invalid': loginIdVal.invalid && (loginIdVal.dirty || loginIdVal.touched),
-                              'is-valid': loginIdVal.valid && (loginIdVal.dirty || loginIdVal.touched)
-                            }"
-                            >
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="material-icons">account_circle</i>
+                      </span>
                     </div>
-                  </span>
-                <span class="bmd-form-group">
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text">
-                          <i class="material-icons">lock</i>
-                        </span>
-                      </div>
-                      <input type="password" class="form-control" placeholder="Password..."
-                            name="loginPassword"
-                            [(ngModel)]="loginPassword"
-                            required
-                            #loginPasswordVal="ngModel"
-                            [ngClass]="{
-                            'is-invalid': loginPasswordVal.invalid && (loginPasswordVal.dirty || loginPasswordVal.touched),
-                            'is-valid': loginPasswordVal.valid && (loginPasswordVal.dirty || loginPasswordVal.touched)
-                          }">
-                    </div>
+                    <input type="email" class="form-control" placeholder="SLIIT ID">
+                  </div>
                 </span>
-                <a href="examples/login-page.html" class="btn btn-link btn-primary " target="_blank" id="forgetPassword">Forgot Password?</a>
-  
-              </div>
-              <div class="card-footer justify-content-center">
-  
-                <a href="#pablo"  ><button type="submit" class="btn btn-primary btn-round" style="width: 200px; margin-top: -10px" >Login</button></a>
-              </div>
-              <div class="tim-typo" id="acuntYet">
-                <h6>
-                 Don't have an account?</h6>
-              </div>
-              <a href="examples/login-page.html" class="btn btn-link btn-primary " target="_blank" style="margin-top: -50px">SIGN UP</a>
-  
+              <span class="bmd-form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="material-icons">lock</i>
+                      </span>
+                    </div>
+                    <input type="password" class="form-control" placeholder="Password">
+                  </div>
+              </span>
+              <a href="examples/login-page.html" class="btn btn-link btn-primary" target="_blank" id="forgetPassword">Forgot Your Password?</a>
             </div>
-          </form>
-        </div>
+            <div class="card-footer justify-content-center">
+              <!--<a href="#pablo" class="btn btn-rose btn-link btn-lg">Lets Go</a>-->
+              <a href="#pablo"  ><button class="btn btn-primary btn-round" style="width: 200px; margin-top: -10px ;background-color: orangered">Login</button></a>
+            </div>
+            <div class="tim-typo" id="accountYet">
+              <h6>
+               Don't have an account yet?</h6>
+            </div>
+            <a href="examples/login-page.html" class="btn btn-link btn-primary" target="_blank" style="margin-top: -50px;color: orangered">SIGN UP</a>
+          </div>
+        </form>
       </div>
     </div>
   </div>
+</div>

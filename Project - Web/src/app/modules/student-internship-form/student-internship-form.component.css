@@ -1,0 +1,48 @@
+.myCardCss{
+    max-width: 700px; height: 330px ;margin-top: 0px
+}
+
+.pad{
+    padding: 10px;
+}
+
+#buttonGroup{
+    margin-left: -280px;
+}
+.sizes{
+    width: 460px;
+}
+@media screen and (max-width: 414px) {
+
+    #contact-form{
+        margin-left: -280px;
+    }
+    #buttonGroup{
+        margin-left: -120px;
+    }
+    .sizes{
+        width: 260px;
+    }
+    #main{
+        margin-top: -200px;
+    }
+}
+@media screen and (max-width: 320px) {
+    #contact-form{
+        margin-left: -320px;
+        /*width: 40px;*/
+    }
+    #buttonGroup{
+        margin-left: -90px;
+
+    }
+    .sizes{
+        width: 260px;
+    }
+    #main{
+        margin-top: -150px;
+    }
+    .title{
+        font-size: 34px;
+    }
+}

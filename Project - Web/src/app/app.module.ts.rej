@@ -1,0 +1,15 @@
+diff a/Project - Web/src/app/app.module.ts b/Project - Web/src/app/app.module.ts	(rejected hunks)
+@@ -24,7 +24,12 @@
+     HeaderComponent,
+     HomeComponent,
+     FooterComponent,
+-  
++    ContactUsComponent,
++    StudentInternshipFormComponent,
++    CompaniesComponent,
++    CompanyComponent,
++    InternshipPageComponent,
++    
+   ],
+   imports: [
+     BrowserModule,

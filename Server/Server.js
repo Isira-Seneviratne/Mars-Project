@@ -35,24 +35,46 @@ var server = app.listen(8080, function()
  * Gets all internships currently available and sends it to the client as a JSON
  * object.
  */
-app.get('/get_all_internships', function(req, res)
+app.post('/get_all_internships', function(req, res)
+{
+  mongoClient.connect(url, {useNewUrlParser: true}, function(err, db)
+  {
+    if (err)
+      console.log(err);
+    var dbo = db.db(dbName);
+    dbo.collection("Internships").find({}).toArray(function(err, result)
+    {
+      if (err)
+        console.log(err);
+      res.send(result);
+    });
+  });
+});
+
+app.post('/get_student', function(req, res)
+{
+  var sID = parseInt(req.body.SID);
+  console.log('Getting student with SID ' + sID);
+  if (!isNaN(sID) && typeof sID == 'number')
   {
     mongoClient.connect(url, {useNewUrlParser: true}, function(err, db)
+    {
+      if (err)
+        console.log(err);
+      var dbo = db.db(dbName);
+      dbo.collection("Students").find({SID: sID}).toArray(function(err, result)
       {
         if (err)
           console.log(err);
-        var dbo = db.db(dbName);
-        dbo.collection("Internships").find({}).toArray(function(err, result)
-          {
-            if (err)
-              console.log(err);
-            res.send(result);
-          }
-        );
-      }
-    );
+        res.send(result);
+      });
+    });
   }
-);
+  else
+  {
+    res.send("The SID sent is not a number.");
+  }
+});
 
 // The section below contains code for setting up a server that uses HTTPS.
 // TODO: Use HTTPS instead of HTTP for extra security.
