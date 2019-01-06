@@ -16,6 +16,10 @@ import { StudentInternshipFormComponent } from './modules/student-internship-for
 import { CompaniesComponent } from './modules/companies/companies.component';
 import { CompanyComponent } from './modules/company/company.component';
 import { InternshipPageComponent } from './modules/internship-page/internship-page.component';
+import { AdminQuizComponent } from './modules/admin-quiz/admin-quiz.component';
+import { AdminStudentComponent } from './modules/admin-student/admin-student.component';
+import { AdmincompanyComponent } from './modules/admincompany/admincompany.component';
+import { StudentProfileComponent } from './modules/student-profile/student-profile.component';
 
 // Services
 import { AuthGuard } from './shared/guards/auth.guard';
@@ -33,7 +37,11 @@ import {AuthService } from './shared/services/auth.service';
     StudentInternshipFormComponent,
     CompaniesComponent,
     CompanyComponent,
-    InternshipPageComponent
+    InternshipPageComponent,
+    AdminQuizComponent,
+    AdminStudentComponent,
+    AdmincompanyComponent,
+    StudentProfileComponent
   ],
   imports: [
     BrowserModule,

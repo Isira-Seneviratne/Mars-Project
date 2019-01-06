@@ -10,7 +10,10 @@ import { StudentInternshipFormComponent } from './modules/student-internship-for
 import { CompaniesComponent } from './modules/companies/companies.component';
 import { CompanyComponent } from './modules/company/company.component';
 import { InternshipPageComponent } from './modules/internship-page/internship-page.component';
-
+import { AdminQuizComponent } from './modules/admin-quiz/admin-quiz.component';
+import { AdminStudentComponent } from './modules/admin-student/admin-student.component';
+import { AdmincompanyComponent } from './modules/admincompany/admincompany.component';
+import { StudentProfileComponent } from './modules/student-profile/student-profile.component';
 
 const routes: Routes = [
     { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -19,9 +22,11 @@ const routes: Routes = [
     {path : 'studentInternshipForm',component:StudentInternshipFormComponent},
     {path:'companies',component:CompaniesComponent},
     {path:'company',component:CompanyComponent},
-    {path:'internshipPage',component:InternshipPageComponent}
-   
-    
+    {path:'internshipPage',component:InternshipPageComponent},
+    {path:'AdminQuiz',component:AdminQuizComponent},
+    {path:'AdminStudent',component:AdminStudentComponent},
+    {path:'Admincompany',component:AdmincompanyComponent},
+    {path:'studentProfile',component:StudentProfileComponent}
 ];
 
 
