@@ -1,6 +1,7 @@
 // This section consists of imports of the various Node modules.
 var express = require('express');
 var fs = require('fs');
+var http = require('http');
 var https = require('https');
 var mongodb = require('mongodb');
 var session = require('express-session');
@@ -25,9 +26,35 @@ mongoClient.connect(url, {useNewUrlParser: true}, function(err, db)
     db.close();
 });
 
-var server = app.listen(8080, function()
+http.createServer(app).listen(80);
+
+/*
+ * If an incoming request is HTTP, it will be redirected to use HTTPS instead.
+ */
+app.use(function(req, res, next)
 {
-    console.log("SLIIT internship server listening at port %s.", server.address().port);
+    if (req.secure)
+        next();
+    else
+        res.redirect('https://' + req.headers.host + req.url);
+});
+
+/*
+ * Sets up a HTTPS connection using a self-signed SSL certificate.
+ */
+const options = {
+    key: fs.readFileSync('https/server.key'),
+    cert: fs.readFileSync('https/server.crt')
+};
+
+https.createServer(options, app).listen(443, function()
+{
+    console.log("SLIIT internship server listening.");
+});
+
+app.get('/', function(req, res)
+{
+    res.send("Welcome!");
 });
 
 /*
@@ -162,18 +189,3 @@ app.post('/add_saq', function(req, res)
         res.send("The QID sent is not a number. Question not inserted.");
     }
 });
-
-// The section below contains code for setting up a server that uses HTTPS.
-// TODO: Use HTTPS instead of HTTP for extra security.
-/*
-const options = {
-    key: fs.readFileSync('encryption/key.pem'),
-    cert: fs.readFileSync('encryption/cert.pem')
-};
-
-https.createServer(options, function (req, res) {
-    res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.write('Hello World!');
-    res.end();
-}).listen(8080);
-*/
