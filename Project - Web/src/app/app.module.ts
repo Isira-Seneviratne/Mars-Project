@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule }   from '@angular/forms';
 import { AppRoutingModule } from './app.routing';
+import { HttpClientModule } from '@angular/common/http';
+import { JwtModule } from '@auth0/angular-jwt';
 
 // Components
 import { AppComponent } from './app.component';
@@ -46,7 +48,14 @@ import {AuthService } from './shared/services/auth.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    JwtModule.forRoot({
+      config:{
+        tokenGetter:() => {
+          return localStorage.getItem('tokenid');        }
+      }
+    })
   ],
   providers: [
     AuthService,
