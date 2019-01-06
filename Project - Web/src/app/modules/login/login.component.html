@@ -12,7 +12,9 @@
       <div class="row"  style="">
       <!--<img src="images/sliitlogo.png" style=" ">-->
         <div class="col-lg-5 col-md-6 col-sm-8 ml-auto mr-auto">
-          <form class="form" method="" action="#">
+
+          <form (submit)="login()" class="form" #loginForm="ngForm"> 
+            
             <div class="card card-login card-hidden" id="loginDetails">
               <div class="card-body">
                 <span class="bmd-form-group">
@@ -22,7 +24,17 @@
                         <i class="material-icons">account_circle</i>
                       </span>
                     </div>
-                    <input type="email" class="form-control" placeholder="SLIIT ID">
+                    <input type="text" class="form-control" placeholder="SLIIT ID."
+                            name="loginIndex"
+                            [(ngModel)]="loginIndex"
+                            required
+                            pattern="[A-Za-z]{2}[0-9]{8}"
+                            #loginIdVal="ngModel"
+                            [ngClass]="{
+                              'is-invalid': loginIdVal.invalid && (loginIdVal.dirty || loginIdVal.touched),
+                              'is-valid': loginIdVal.valid && (loginIdVal.dirty || loginIdVal.touched)
+                            }"
+                            >
                   </div>
                 </span>
               <span class="bmd-form-group">
@@ -32,14 +44,24 @@
                         <i class="material-icons">lock</i>
                       </span>
                     </div>
-                    <input type="password" class="form-control" placeholder="Password">
+                    <input type="password" class="form-control" placeholder="Password"
+                            name="loginPassword"
+                            [(ngModel)]="loginPassword"
+                            required
+                            #loginPasswordVal="ngModel"
+                            [ngClass]="{
+                            'is-invalid': loginPasswordVal.invalid && (loginPasswordVal.dirty || loginPasswordVal.touched),
+                            'is-valid': loginPasswordVal.valid && (loginPasswordVal.dirty || loginPasswordVal.touched)
+                          }">
                   </div>
               </span>
               <a href="examples/login-page.html" class="btn btn-link btn-primary" target="_blank" id="forgetPassword">Forgot Your Password?</a>
             </div>
             <div class="card-footer justify-content-center">
               <!--<a href="#pablo" class="btn btn-rose btn-link btn-lg">Lets Go</a>-->
-              <a href="#pablo"  ><button class="btn btn-primary btn-round" style="width: 200px; margin-top: -10px ;background-color: orangered">Login</button></a>
+              <a href="#pablo">
+                <button class="btn btn-primary btn-round" style="width: 200px; margin-top: -10px ;background-color: orangered" type="submit">Login</button>
+              </a>
             </div>
             <div class="tim-typo" id="accountYet">
               <h6>
