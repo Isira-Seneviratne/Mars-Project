@@ -1,0 +1,21 @@
+.pad{
+    padding: 10px;
+  }
+
+  table, th, td,thead th {
+    
+    
+    color:black;
+  }
+
+  .dot {
+    height: 100px;
+    width: 100px;
+    background-color: orangered;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 40px;
+    padding-right: 10px;
+    color: white;
+    /*display: inline-block;*/
+  }
