@@ -21,7 +21,7 @@ export class AuthService {
   // To log an existing user into the system
   login(user){
     
-    return this.http.post('http://localhost:8080/get_student', user);
+    return this.http.post('https://localhost:443/get_student', user);
   }
 
   // For validation

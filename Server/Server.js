@@ -13,6 +13,13 @@ var mongoClient = mongodb.MongoClient;
 var url = "mongodb://localhost:27017/";
 var dbName = "db_SliitInternship";
 
+//to enable cross origin resource sharing
+const cors=require('cors');
+
+
+//setting up the cors middleware
+app.use(cors());
+
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded( {extended: true} ));
 app.use(bodyParser.json());
@@ -22,7 +29,7 @@ mongoClient.connect(url, {useNewUrlParser: true}, function(err, db)
 {
     if(err)
         throw err;
-    console.log("Connected to the SLIIT Internship database.");
+    console.log("Connected to the SLIIT Internship database");
     db.close();
 });
 
@@ -49,7 +56,7 @@ const options = {
 
 https.createServer(options, app).listen(443, function()
 {
-    console.log("SLIIT internship server listening.");
+    console.log("SLIIT internship server listening at port 443");
 });
 
 app.get('/', function(req, res)
