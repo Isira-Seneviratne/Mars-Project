@@ -19,14 +19,14 @@ const routes: Routes = [
     { path: '', component: HomeComponent, pathMatch: 'full' },
     { path: 'login', component: LoginComponent },
     { path: 'contact', component: ContactUsComponent },
-    {path : 'studentInternshipForm',component:StudentInternshipFormComponent},
-    {path:'companies',component:CompaniesComponent},
-    {path:'company',component:CompanyComponent},
-    {path:'internshipPage',component:InternshipPageComponent},
-    {path:'AdminQuiz',component:AdminQuizComponent},
-    {path:'AdminStudent',component:AdminStudentComponent},
-    {path:'Admincompany',component:AdmincompanyComponent},
-    {path:'studentProfile',component:StudentProfileComponent}
+    {path : 'studentInternshipForm', component:StudentInternshipFormComponent},
+    {path:'companies', component:CompaniesComponent},
+    {path:'company', component:CompanyComponent},
+    {path:'internshipPage', component:InternshipPageComponent},
+    {path:'AdminQuiz', component:AdminQuizComponent},
+    {path:'AdminStudent', component:AdminStudentComponent},
+    {path:'Admincompany', component:AdmincompanyComponent},
+    {path:'profile', component:StudentProfileComponent}
 ];
 
 

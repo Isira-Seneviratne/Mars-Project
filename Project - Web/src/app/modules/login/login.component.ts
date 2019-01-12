@@ -32,7 +32,10 @@ export class LoginComponent implements OnInit {
     this.auth.login(user).subscribe((res:any) => {
 
       if (res) {
+        this.auth.storeData('tokenid', res.reply);
+        console.log(res.reply);
         console.log('found');
+        this.router.navigate(['/profile']);
        }else{
         console.log(' not found');
        }

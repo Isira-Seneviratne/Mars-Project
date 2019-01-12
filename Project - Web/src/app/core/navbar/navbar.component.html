@@ -68,7 +68,9 @@
             <i class="material-icons">fingerprint</i> LOGIN
           </a>
         </li>
-        <li class="dropdown nav-item" style="margin-left: 50px">
+
+        <!-- User Profile  -->
+        <li *ngIf="!auth.isLoggedIn()" class="dropdown nav-item" style="margin-left: 50px">
           <a href="#pablo" class="profile-photo dropdown-toggle nav-link" data-toggle="dropdown">
               <div class="profile-photo-small"  >
                   <img src="../../../assets/images/profile.jpg" alt="Circle Image" class="rounded-circle img-fluid">
@@ -76,10 +78,12 @@
           </a>
           <div class="dropdown-menu dropdown-menu-right">
 
-              <a href="#pablo" class="dropdown-item">ViewProfile</a>
+              <a routerLink="/profile" class="dropdown-item">ViewProfile</a>
               <a href="#pablo" class="dropdown-item">LogOut</a>
           </div>
       </li>
+      <!-- /User Profile -->
+
       </ul>
     </div>
   </div>
