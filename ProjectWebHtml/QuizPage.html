@@ -1,222 +1,200 @@
 
 <!doctype html>
 <html lang="en">
+	<head>
+		<title>Mars Project</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<!--     Fonts and icons     -->
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+		<!-- Material Kit CSS -->
+		<link href="assets/css/material-kit.css?v=2.0.5" rel="stylesheet" />
+		<style>
+			.myCardCss{
+				max-width: 700px; height: 330px ;margin-top: 0px
+			}
+			.pad{
+				padding: 10px;
+			}
+			table, th {
+				background-color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-color-on-scroll navbar-transparent    fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
+			<div class="container">
+				<div class="navbar-translate">
+					<a class="navbar-brand" href="../index.html">
+						<img src="images/mars Logo.png" alt="Raised Image" class="img-raised rounded img-fluid" style="height:72px;width:200px;margin-top: -20px;">
+						</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="navbar-toggler-icon"></span>
+							<span class="navbar-toggler-icon"></span>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item pad">
+								<a href="index.html" class="nav-link" >
+									<i class="material-icons">home</i> Home
 
-<head>
-  <title>Maars Project</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <!--     Fonts and icons     -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-  <!-- Material Kit CSS -->
-  <link href="assets/css/material-kit.css?v=2.0.5" rel="stylesheet" />
+								</a>
+							</li>
+							<li class="nav-item pad">
+								<a href="#" class="nav-link" >
+									<i class="material-icons">person</i> Students
 
-  <style>
-    .myCardCss{
-      max-width: 700px; height: 330px ;margin-top: 0px
-    }
+								</a>
+							</li>
+							<li class="nav-item pad">
+								<a href="#" class="nav-link" >
+									<i class="material-icons">business_center</i> COMPANIES
 
-    .pad{
-      padding: 10px;
-    }
+								</a>
+							</li>
+							<li class="nav-item pad">
+								<a href="#" class="nav-link" >
+									<i class="material-icons">exam</i> Quiz
 
-    table, th {
+								</a>
+							</li>
+							<li class="button-container nav-item iframe-extern pad" style="right: 100px;">
+								<a href="login.html" target="_blank" class="btn  btn-rose   btn-round btn-block" style="background-color: orangered">
+									<i class="material-icons">fingerprint</i> LOGIN
 
-      background-color: white;
-    }
-
-  </style>
-</head>
-
-<body>
-
-<nav class="navbar navbar-color-on-scroll navbar-transparent    fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
-  <div class="container">
-    <div class="navbar-translate">
-      <a class="navbar-brand" href="../index.html">
-        <img src="images/mars Logo.png" alt="Raised Image" class="img-raised rounded img-fluid" style="height:72px;width:200px;margin-top: -20px;"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="navbar-toggler-icon"></span>
-        <span class="navbar-toggler-icon"></span>
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item pad">
-          <a href="index.html" class="nav-link" >
-            <i class="material-icons">home</i> Home
-          </a>
-        </li>
-        <li class="nav-item pad">
-          <a href="#" class="nav-link" >
-            <i class="material-icons">person</i> Students
-          </a>
-        </li>
-        <li class="nav-item pad">
-          <a href="#" class="nav-link" >
-            <i class="material-icons">business_center</i> COMPANIES
-          </a>
-        </li>
-        <li class="nav-item pad">
-          <a href="#" class="nav-link" >
-            <i class="material-icons">exam</i> Quiz
-          </a>
-        </li>
-
-        <li class="button-container nav-item iframe-extern pad" style="right: 100px;">
-          <a href="login.html" target="_blank" class="btn  btn-rose   btn-round btn-block" style="background-color: orangered">
-            <i class="material-icons">fingerprint</i> LOGIN
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<div class="page-header header-filter" data-parallax="true" style="background-image: url('images/background.jpg')">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 ml-auto mr-auto">
-        <div class="brand text-center" style="margin-left: -120px">
-
-          <form class="form-inline ml-auto pad" style="margin-top: -170px;">
-            <div class="form-group has-gray">
-
-              <input type="text" class="form-control "  placeholder="SearchQuiz"  style="background-color: red;order-radius: 25px; border-radius: 10px;border: 2px solid red;padding: 20px;color:white;::placeholder { color: white;
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="page-header header-filter" data-parallax="true" style="background-image: url('images/background.jpg')">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 ml-auto mr-auto">
+							<div class="brand text-center" style="margin-left: -120px">
+								<form class="form-inline ml-auto pad" style="margin-top: -170px;">
+									<div class="form-group has-gray">
+										<input type="text" class="form-control "  placeholder="SearchQuiz"  style="background-color: red;order-radius: 25px; border-radius: 10px;border: 2px solid red;padding: 20px;color:white;::placeholder { color: white;
   opacity: 1;
 } ">
-            </div>
-            <!--<button type="submit" class="btn btn-white btn-raised btn-fab btn-round">-->
-            <!--<i class="material-icons">search</i>-->
-            <!--</button>-->
-          </form>
-
-        </div>
-      </div>
-    </div>
-
-
-  </div>
-</div>
-
-<div class="main main-raised" id="main" style="background-color: black;margin-left: -30px;width: 1379px;margin-top: -300px">
-  <div class="contact-content">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-lg-10 col-md-10 ml-auto mr-auto">
-
-          <div class="table-responsive" >
-            <table class="table" style="">
-              <thead style="border:1px solid red ">
-              <tr>
-
-                <th class="text-center" style="border:4px solid red ">QuizID</th>
-                <th class="text-center" style="border:4px solid red ">CompanyName</th>
-                <th class="text-center"style="border:4px solid red ">Internship</th>
-                <th class="text-center" style="border:4px solid red ">Status</th>
-
-              </tr>
-              </thead>
-              <tbody>
-              <tr>
-                <td class="text-center" style="border:4px solid red ; background-color: white;">1</td>
-                <td class="text-center" style="border:4px solid red ; background-color: white;">Andrew Mike</td>
-                <td class="text-center" style="border:4px solid red ; background-color: white;">Develop</td>
-                <td class="text-center" style="border:4px solid red ; background-color: white;">2013</td>
-                <td ><button class="btn btn-warning" style="margin-left:  10px ; width : 120px">Edit</button></td>
-                <td ><button class="btn btn-success" style="margin-left: -60px ">CreateQuiz</button></td>
-
-              </tr>
-
-              </tbody>
-            </table>
-          </div>
-
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
-<footer class="footer footer-default" >
-  <div class="container">
-    <nav class="float-left">
-      <ul>
-
-        <li >
-          <a href="#" >
+										</div>
+										<!--<button type="submit" class="btn btn-white btn-raised btn-fab btn-round">-->
+										<!--<i class="material-icons">search</i>-->
+										<!--</button>-->
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main main-raised" id="main" style="background-color: black;margin-left: -30px;width: 1379px;margin-top: -300px">
+					<div class="contact-content">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-10 col-md-10 ml-auto mr-auto">
+									<div class="table-responsive" >
+										<table class="table" style="">
+											<thead style="border:1px solid red ">
+												<tr>
+													<th class="text-center" style="border:4px solid red ">QuizID</th>
+													<th class="text-center" style="border:4px solid red ">CompanyName</th>
+													<th class="text-center"style="border:4px solid red ">Internship</th>
+													<th class="text-center" style="border:4px solid red ">Status</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="text-center" style="border:4px solid red ; background-color: white;">1</td>
+													<td class="text-center" style="border:4px solid red ; background-color: white;">Andrew Mike</td>
+													<td class="text-center" style="border:4px solid red ; background-color: white;">Develop</td>
+													<td class="text-center" style="border:4px solid red ; background-color: white;">2013</td>
+													<td >
+														<button class="btn btn-warning" style="margin-left:  10px ; width : 120px">Edit</button>
+													</td>
+													<td >
+														<button class="btn btn-success" style="margin-left: -60px ">CreateQuiz</button>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer class="footer footer-default" >
+					<div class="container">
+						<nav class="float-left">
+							<ul>
+								<li >
+									<a href="#" >
             ABOUT US
           </a>
-        </li>
-        <li >
-          <a href="#" >
+								</li>
+								<li >
+									<a href="#" >
             CONTACT US
           </a>
-        </li>
-        <li >
-          <a href="#" >
+								</li>
+								<li >
+									<a href="#" >
             FAQ
           </a>
-        </li>
-        <li >
-          <a href="#" >
+								</li>
+								<li >
+									<a href="Register.html" >
             Register
           </a>
-        </li>
-      </ul>
-    </nav>
-    <div class="copyright float-right">
+								</li>
+							</ul>
+						</nav>
+						<div class="copyright float-right">
       &copy;
-      <script>
+
+							<script>
           document.write(new Date().getFullYear())
-      </script>, made with <i class="material-icons">favorite</i> by
-      <a href="https://www.creative-tim.com/" target="_blank">Mars</a> for a better web.
-      <div style=" margin-left: -750px">
-        <button class="btn btn-just-icon btn-twitter" >
-          <i class="fa fa-twitter"></i>
-        </button>
-        <button class="btn btn-just-icon  btn-facebook">
-          <i class="fa fa-facebook"> </i>
-        </button>
+      </script>, made with
+							<i class="material-icons">favorite</i> by
 
-        <button class="btn btn-just-icon  btn-google">
-          <i class="fa fa-google"> </i>
-        </button>
+							<a href="https://www.creative-tim.com/" target="_blank">Mars</a> for a better web.
 
-        <button class="btn btn-just-icon  btn-linkedin">
-          <i class="fa fa-linkedin"></i>
-        </button>
-      </div>
-
-
-    </div>
-  </div>
-</footer>
-
-
-
-<!--   Core JS Files   -->
-<script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
-<script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
-<script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
-<script src="./assets/js/plugins/moment.min.js"></script>
-<!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
-<script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
-<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-<script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
-
-<!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-<script src="./assets/js/material-kit.js?v=2.0.5" type="text/javascript"></script>
-
-<script>
+							<div style=" margin-left: -750px">
+								<button class="btn btn-just-icon btn-twitter" >
+									<i class="fa fa-twitter"></i>
+								</button>
+								<button class="btn btn-just-icon  btn-facebook">
+									<i class="fa fa-facebook"></i>
+								</button>
+								<button class="btn btn-just-icon  btn-google">
+									<i class="fa fa-google"></i>
+								</button>
+								<button class="btn btn-just-icon  btn-linkedin">
+									<i class="fa fa-linkedin"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</footer>
+				<!--   Core JS Files   -->
+				<script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
+				<script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+				<script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+				<script src="./assets/js/plugins/moment.min.js"></script>
+				<!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+				<script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+				<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+				<script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+				<!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+				<script src="./assets/js/material-kit.js?v=2.0.5" type="text/javascript"></script>
+				<script>
 
     // -------------Date Time Picker----------
     $('.datetimepicker').datetimepicker({
@@ -236,7 +214,5 @@
         }
     });
 </script>
-
 </body>
-
 </html>
