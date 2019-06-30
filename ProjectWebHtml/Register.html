@@ -15,14 +15,15 @@
 			.pad {
 				padding: 10px;
 			}
+			.border:focus {
+				border-color: orangered;
+			}
+
 			#sliitLogo {
 				margin-left: 20px;
 				width: 306px;
 				height: 117px;
 				margin-top: 290px;
-			}
-			.border:focus {
-				border-color: orangered;
 			}
 			#loginTitle {
 				margin-left: 380px
@@ -60,36 +61,36 @@
 			}
 
 			@media screen and (max-width: 414px) {
-				#sliitLogo{
+				#sliitLogo {
 					width: 300px;
 					height: 100px;
 					margin-left: 30px;
 					filter: brightness(1.0);
 				}
-				#loginTitle{
+				#loginTitle {
 					margin-left: 50px;
 				}
-				#loginName{
+				#loginName {
 					font-size: 45px;
 				}
-				#loginDetails{
+				#loginDetails {
 					margin-left: 20px;
 					margin-top:130px;
 					width: 350px;
 				}
-				#background{
+				#background {
 					height:700px;
 				}
-				#forgetPassword{
+				#forgetPassword {
 					margin-left: 160px;
 				}
-				#noAccountYet{
+				#noAccountYet {
 					margin-left: 10px;
 				}
 				#footerStyle{
 					margin-left: 30px;
 				}
-				#copyright{
+				#copyright {
 					position: absolute;
 					margin-top: 50px;
 					margin-left: 30px;
@@ -105,6 +106,9 @@
 				}
 			}
 			@media screen and (max-width: 375px) {
+				.footStyle {
+					font-size: 14px;
+				}
 				#marsLogo {
 					height:52px;
 					width:150px;
@@ -134,9 +138,6 @@
 				#footerStyle {
 					margin-left: -10px;
 				}
-				.footStyle {
-					font-size: 14px;
-				}
 				#copyright {
 					position: absolute;
 					margin-top: 100px;
@@ -152,48 +153,48 @@
 			}
 
 			@media screen and (max-width: 320px) {
-					#marsLogo{
+				.footStyle {
+					font-size: 12px;
+				}
+				#marsLogo {
 					height:52px;
 					width:150px;
 					margin-top: -10px;
 				}
-				#sliitLogo{
+				#sliitLogo {
 					margin-top: -20px;
 					width: 250px;
 					height: 75px;
 					margin-left: 40px;
 					filter: brightness(1.0);
 				}
-				#loginTitle{
+				#loginTitle {
 					margin-left: 60px;
 				}
-				#loginName{
+				#loginName {
 					font-size: 30px;
 				}
-				#loginDetails{
+				#loginDetails {
 					margin-left: 5px;
 					margin-top:80px;
 					width: 280px;
 				}
-				#forgetPassword{
+				#forgetPassword {
 					margin-left: 95px;
 				}
-				#footerStyle{
+				#footerStyle {
 					margin-left: -30px;
 				}
-				.footStyle{
-					font-size: 12px;
-				}
-				#copyright{
+				#copyright {
 					position: absolute;
 					margin-top: 100px;
 					margin-left: 0px;
 				}
-				#social{
+				#social {
 					margin-left: 20px;
 					margin-top:170px;
 				}
-				#register{
+				#register {
 					margin-left: 20px;
 				}
 			}
@@ -204,7 +205,7 @@
 			<div class="container">
 				<div class="navbar-translate">
 					<a class="navbar-brand" href="../index.html">
-						<img src="images/mars Logo.png" alt="Raised Image" class="rounded img-fluid" id="marsLogo" style="">
+						<img src="images/mars Logo.png" alt="Raised Image" class="rounded img-fluid" id="marsLogo">
 					</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="sr-only">Toggle navigation</span>
@@ -240,15 +241,15 @@
 							</a>
 						</li>
 						<form class="form-inline ml-auto pad">
-						<div class="form-group has-gray">
-						<input type="text" class="form-control border" placeholder="Search" >
-						</div>
-						<button type="submit" class="btn btn-white btn-raised btn-fab btn-round">
-						<i class="material-icons">search</i>
-						</button>
+							<div class="form-group has-gray">
+								<input type="text" class="form-control border" placeholder="Search" >
+							</div>
+							<button type="submit" class="btn btn-white btn-raised btn-fab btn-round">
+								<i class="material-icons">search</i>
+							</button>
 						</form>
 						<li class="button-container nav-item iframe-extern pad" style="right: 100px;">
-							<a href="login.html" target="_blank" class="btn  btn-rose   btn-round btn-block"  style="background-color: orangered">
+							<a href="login.html" target="_blank" class="btn btn-rose btn-round btn-block"  style="background-color: orangered">
 								<i class="material-icons">fingerprint</i>LOGIN
 							</a>
 						</li>
@@ -303,7 +304,7 @@
 													Stream
 												</span>
 											</div>
-											<select class="">
+											<select class="form-control selectpicker sizes" data-style="btn btn-link">
 												<option disabled>Choose your stream</option>
 												<option value="IT">Information Technology</option>
 												<option value="BM">Business Management</option>
@@ -318,7 +319,7 @@
 							</div>
 						</form>
 					</div>
-				</div> 
+				</div>
 			</div>
 		</div>
 		<footer class="footer footer-default">
