@@ -20,6 +20,47 @@
 			.pad {
 				padding: 10px;
 			}
+			.sizes {
+				width: 460px;
+			}
+
+			#buttonGroup {
+				margin-left: -280px;
+			}
+
+			@media screen and (max-width: 414px) {
+				.sizes {
+					width: 260px;
+				}
+
+				#contact-form {
+					margin-left: -280px;
+				}
+				#buttonGroup {
+					margin-left: -120px;
+				}
+				#main {
+					margin-top: -200px;
+				}
+			}
+			@media screen and (max-width: 320px) {
+				.title {
+					font-size: 34px;
+				}
+				.sizes {
+					width: 260px;
+				}
+
+				#contact-form {
+					margin-left: -320px;
+				}
+				#buttonGroup {
+					margin-left: -90px;
+				}
+				#main {
+					margin-top: -150px;
+				}
+			}
 		</style>
 	</head>
 	<body>
@@ -39,7 +80,7 @@
 				<div class="collapse navbar-collapse">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item pad">
-							<a href="index.html" class="nav-link">
+							<a href="index.html" class="nav-link" >
 								<i class="material-icons">home</i> Home
 							</a>
 						</li>
@@ -55,7 +96,7 @@
 							</div>
 						</li>
 						<li class="nav-item pad">
-							<a href="#" class="nav-link">
+							<a href="#" class="nav-link" >
 								<i class="material-icons">business_center</i> COMPANIES
 							</a>
 						</li>
@@ -76,17 +117,16 @@
 				</div>
 			</div>
 		</nav>
-		<div class="page-header header-filter" data-parallax="true" style="background-image: url('images/background.jpg');height: 500px">
+		<div class="page-header header-filter" data-parallax="true" style="background-image: url('images/background.jpg')">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 ml-auto mr-auto">
 						<div class="brand text-center">
-							<h1 class="title">
-								The
+							<h1 class="title">The
 								<span style=" color: red">expert</span>
-								<br>
+								</br>
 								in anything was once a
-								<br>
+								</br>
 								<span style=" color: red">beginner</span>
 							</h1>
 						</div>
@@ -94,62 +134,55 @@
 				</div>
 			</div>
 		</div>
-		<div class="main " id="main" style="background-color: whitesmoke">
+		<div class="main main-raised" id="main">
 			<div class="contact-content">
 				<div class="container">
-					<div class="row"  style="">
-						<!--<img src="images/sliitlogo.png" style=" ">-->
-						<div class="col-lg-12 col-md-12 col-sm-12 ml-auto mr-auto">
-							<form class="form" method="" action="#">
-								<div class="card card-login card-hidden">
-									<div class="card-body">
-										<div class="row">
-											<div class="col-md-2" style="padding: 0px;">
-												<img src="images/dialog.jpg" alt="Raised Image" class="rounded img-fluid" style="width:180px;height: 100px; margin-top: 10px;margin-left: 30px">
-											</div>
-											<div class="col-md-8" style="margin-top: -20px">
-												<h3 class="title">Internship Title</h3>
-												<h5>Posted by Company Address </h5>
-											</div>
-											<div class="col-md-2" style="margin-top: -20px">
-												<button class="btn btn-primary" style="background-color: orangered;margin-top: 80px; margin-left: -10px;">Apply For This Job</button>
-											</div>
-										</div>
-										<hr>
-										<h2 class="title" style="margin-left: 450px">Job Description</h2>
-										<div class="row">
-											<div class="col-md-3">Job location</div>
-											<div class="col-md-3"></div>
-											<div class="col-md-3">Salary (per month)</div>
-											<div class="col-md-3"></div>
-										</div>
-										<div class="row">
-											<div class="col-md-3">Total Vacancies</div>
-											<div class="col-md-3"></div>
-											<div class="col-md-3">Maximum Age</div>
-											<div class="col-md-3"></div>
-										</div>
-										<div class="row">
-											<div class="col-md-3">Minimum qualification</div>
-											<div class="col-md-3"></div>
-											<div class="col-md-3">Gender preference</div>
-											<div class="col-md-3"></div>
-										</div>
-										<div class="row">
-											<div class="col-md-3">Application Deadline</div>
-											<div class="col-md-3"></div>
-											<div class="col-md-3">Role</div>
-											<div class="col-md-3"></div>
-										</div>
-										<div class="row">
-											<div class="col-md-3">Skills</div>
-											<div class="col-md-3"></div>
-											<div class="col-md-3"></div>
-											<div class="col-md-3"></div>
-										</div>
-									</div>
-									<div class="card-footer justify-content-center">
-									</div>
+					<h2 class="title" style="text-align: center">Internship Application Form</h2>
+					<p class="text-info" style="text-align: center">Please fill the following: </p>
+					<div class="row" style="margin-left: 300px; ">
+						<div class="col-md-6">
+							<br>
+							<br>
+							<form role="form" id="contact-form" method="post">
+								<div class="form-group">
+									<label for="selectCompany">Select Company</label>
+									<select class="form-control selectpicker sizes" data-style="btn btn-link" id="selectCompany">
+										<option>Pearson</option>
+										<option>IFS</option>
+										<option>99X</option>
+										<option>MIT</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="selectInternship">Select Internship</label>
+									<select class="form-control selectpicker sizes" data-style="btn btn-link" id="selectInternship">
+										<option>Developer</option>
+										<option>QA Engineer</option>
+										<option>Fornt Desk Employee</option>
+										<option>Business Analyst</option>
+										<option>Test Engineer</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="InternshipDuration">Internship Duration</label>
+									<select class="form-control selectpicker sizes" data-style="btn btn-link" id="InternshipDuration">
+										<option>3 Months</option>
+										<option>6 Months</option>
+										<option>1 Year</option>
+										<option>1 Year & 6 Months</option>
+										<option>2 Years</option>
+									</select>
+								</div>
+								<div class="form-group sizes">
+									<label class="label-control">Graduation Date</label>
+									<input type="text" class="form-control datetimepicker" placeholder="DD/MM/YYYY"/>
+									<label class="label-control" style="margin-top: 60px">
+										Tell us when you are expected to graduate.
+									</label>
+									<br>
+								</div>
+								<div class="submit text-center" id="buttonGroup">
+									<input type="submit" class="btn btn-primary btn-raised btn-round" value="Submit" style="background-color:orangered">
 								</div>
 							</form>
 						</div>
@@ -157,7 +190,7 @@
 				</div>
 			</div>
 		</div>
-		<footer class="footer footer-default">
+		<footer class="footer footer-default" >
 			<div class="container">
 				<nav class="float-left">
 					<ul>
@@ -174,7 +207,7 @@
 				</nav>
 				<div class="copyright float-right">
 					<div style=" margin-left: -750px">
-						<button class="btn btn-just-icon btn-twitter">
+						<button class="btn btn-just-icon btn-twitter" >
 							<i class="fa fa-twitter"></i>
 						</button>
 						<button class="btn btn-just-icon  btn-facebook">

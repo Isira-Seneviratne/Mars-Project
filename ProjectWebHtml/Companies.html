@@ -1,339 +1,231 @@
 <!doctype html>
 <html lang="en">
+	<head>
+		<title>Mars Project</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<!-- Fonts and icons -->
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+		<!-- Material Kit CSS -->
+		<link href="assets/css/material-kit.css?v=2.0.5" rel="stylesheet" />
 
-<head>
-  <title>Maars Project</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <!--     Fonts and icons     -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-  <!-- Material Kit CSS -->
-  <link href="assets/css/material-kit.css?v=2.0.5" rel="stylesheet" />
+		<style>
+			.myCardCss {
+				max-width: 760px;
+				height: 270px;
+				margin-top: 0px
+			}
+			.pad {
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-color-on-scroll navbar-transparent    fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
+			<div class="container">
+				<div class="navbar-translate">
+					<a class="navbar-brand" href="../index.html">
+						<img src="images/mars Logo.png" alt="Raised Image" class="rounded img-fluid" style="height:72px;width:200px;margin-top: -20px;">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="navbar-toggler-icon"></span>
+						<span class="navbar-toggler-icon"></span>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item pad">
+							<a href="index.html" class="nav-link">
+								<i class="material-icons">home</i> Home
+							</a>
+						</li>
+						<li class="dropdown nav-item pad">
+							<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+								<i class="material-icons">person</i> Internships
+							</a>
+							<div class="dropdown-menu dropdown-with-icons">
+								<a href="" class="dropdown-item">Data 1</a>
+								<a href="" class="dropdown-item">Data 2</a>
+								<a href="" class="dropdown-item">Data 3</a>
+								<a href="" class="dropdown-item">Data 4</a>
+							</div>
+						</li>
+						<li class="nav-item pad">
+							<a href="#" class="nav-link">
+								<i class="material-icons">business_center</i> COMPANIES
+							</a>
+						</li>
+						<form class="form-inline ml-auto pad">
+							<div class="form-group has-gray">
+								<input type="text" class="form-control" placeholder="Search">
+							</div>
+							<button type="submit" class="btn btn-white btn-raised btn-fab btn-round">
+								<i class="material-icons">search</i>
+							</button>
+						</form>
+						<li class="button-container nav-item iframe-extern pad" style="right: 100px;">
+							<a href="login.html" target="_blank" class="btn  btn-rose   btn-round btn-block" style="background-color: orangered">
+								<i class="material-icons">fingerprint</i> LOGIN
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="page-header header-filter" data-parallax="true" style="background-image: url('images/background.jpg');width: 100%; height:400px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 ml-auto mr-auto">
+						<div class="brand text-center">
+							<h1 class="title">
+								The
+								<span style=" color: red">expert</span>
+								<br>
+								in anything was once a
+								<br>
+								<span style=" color: red">beginner</span>
+							</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class=" main-raised main">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" >
+						<form class="form-inline ml-auto pad">
+							<div class="form-group has-gray" style="margin-left: 810px">
+								<input type="text" class="form-control" placeholder="Search">
+							</div>
+							<button type="submit" class="btn btn-white btn-raised btn-fab btn-round">
+								<i class="material-icons">search</i>
+							</button>
+						</form>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="card card-background " style="background: url(images/businessAnalyst.jpg); ">
+							<div class="card-body myCardCss">
+								<h3 class="card-title">
+									<span style="color: red">Company Name</span>
+									<br>
+								</h3>
+								<br>
+								<p class="card-description" style="color: white">
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+									Lorem Ipsum
+								</p>
+								<img src="images/mars Logo.png" alt="Raised Image" class="rounded img-fluid" style="height: 50px;margin-top: 10px;margin-left: -10px"></a>
+								<button class="btn btn-primary" style="background-color: orangered;margin-top: -70px; margin-left: 110px">Apply</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card card-background " style="background: url(images/businessAnalyst.jpg); ">
+							<div class="card-body myCardCss">
+								<h3 class="card-title">
+									<span style="color: red">Company Name</span>
+									<br>
+								</h3>
+								<br>
+								<p class="card-description" style="color: white">
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+									Lorem Ipsum
+								</p>
+								<img src="images/mars Logo.png" alt="Raised Image" class="rounded img-fluid" style="height: 50px;margin-top: 10px;margin-left: -10px"></a>
+								<button class="btn btn-primary" style="background-color: orangered;margin-top: -70px; margin-left: 110px">Apply</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card card-background " style="background: url(images/companyBusiness1.jpg); ">
+							<div class="card-body  myCardCss">
+								<h3 class="card-title">
+									<span style="color: red">Company Name</span>
+									<br>
+								</h3>
+								<br>
+								<p class="card-description" style="color: white">
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+									Lorem Ipsum
+								</p>
+								<img src="images/mars Logo.png" alt="Raised Image" class="rounded img-fluid" style="height: 50px;margin-top: 10px;margin-left: -10px"></a>
+								<button class="btn btn-primary" style="background-color: orangered;margin-top: -70px; margin-left: 110px">Apply</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card card-background " style="background: url(images/businessAnalyst.jpg); ">
+							<div class="card-body  myCardCss">
+								<h3 class="card-title">
+									<span style="color: red">Company Name</span>
+									<br>
+								</h3>
+								<br>
+								<p class="card-description" style="color: white">
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+									Lorem Ipsum
+								</p>
+								<img src="images/mars Logo.png" alt="Raised Image" class="rounded img-fluid" style="height: 50px;margin-top: 10px;margin-left: -10px"></a>
+								<button class="btn btn-primary" style="background-color: orangered;margin-top: -70px; margin-left: 110px">Apply</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer footer-default">
+			<div class="container">
+				<nav class="float-left">
+					<ul>
+						<li>
+							<a href="#">ABOUT US</a>
+						</li>
+						<li>
+							<a href="#">CONTACT US</a>
+						</li>
+						<li>
+							<a href="#">FAQ</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="copyright float-right">
+					<div style=" margin-left: -750px">
+						<button class="btn btn-just-icon btn-twitter">
+							<i class="fa fa-twitter"></i>
+						</button>
+						<button class="btn btn-just-icon btn-facebook">
+							<i class="fa fa-facebook"></i>
+						</button>
+						<button class="btn btn-just-icon btn-google">
+							<i class="fa fa-google"></i>
+						</button>
+						<button class="btn btn-just-icon btn-linkedin">
+							<i class="fa fa-linkedin"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</footer>
 
-  <style>
-    .myCardCss{
+		<!--   Core JS Files   -->
+		<script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
+		<script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+		<script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+		<script src="./assets/js/plugins/moment.min.js"></script>
+		<!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+		<script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+		<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+		<script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
 
-      max-width: 760px; height: 270px ;margin-top: 0px
-    }
-
-    .pad{
-      padding: 10px;
-    }
-
-  </style>
-</head>
-
-<body>
-
-<nav class="navbar navbar-color-on-scroll navbar-transparent    fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
-  <div class="container">
-    <div class="navbar-translate">
-      <a class="navbar-brand" href="../index.html">
-        <img src="images/mars Logo.png" alt="Raised Image" class="rounded img-fluid" style="height:72px;width:200px;margin-top: -20px;"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="navbar-toggler-icon"></span>
-        <span class="navbar-toggler-icon"></span>
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item pad">
-          <a href="index.html" class="nav-link" >
-            <i class="material-icons">home</i> Home
-          </a>
-        </li>
-        <li class="dropdown nav-item pad">
-          <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-            <i class="material-icons">person</i> Internships
-          </a>
-          <div class="dropdown-menu dropdown-with-icons">
-            <a href="" class="dropdown-item">
-              Data 1
-            </a>
-            <a href="" class="dropdown-item">
-              Data2
-            </a>
-            <a href="" class="dropdown-item">
-              Data3
-            </a>
-            <a href="" class="dropdown-item">
-              Data4
-            </a>
-
-          </div>
-
-        </li>
-        <li class="nav-item pad">
-          <a href="#" class="nav-link" >
-            <i class="material-icons">business_center</i> COMPANIES
-          </a>
-        </li>
-
-
-
-
-        <form class="form-inline ml-auto pad">
-          <div class="form-group has-gray">
-            <input type="text" class="form-control" placeholder="Search">
-          </div>
-          <button type="submit" class="btn btn-white btn-raised btn-fab btn-round">
-            <i class="material-icons">search</i>
-          </button>
-        </form>
-        <li class="button-container nav-item iframe-extern pad" style="right: 100px;">
-          <a href="login.html" target="_blank" class="btn  btn-rose   btn-round btn-block" style="background-color: orangered">
-            <i class="material-icons">fingerprint</i> LOGIN
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<div class="page-header header-filter" data-parallax="true" style="background-image: url('images/background.jpg');width: 100%; height:400px;">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 ml-auto mr-auto">
-        <div class="brand text-center">
-          <h1 class="title">The <span style=" color: red">expert</span> </br> in anything was once a </br> <span style=" color: red">beginner</span> </h1>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class=" main-raised main">
-    <div class="container">
-
-        <div class="row" >
-            <div class="col-md-12"  >
-                <form class="form-inline ml-auto pad" >
-                    <div class="form-group has-gray" style="margin-left: 810px">
-                        <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                    <button type="submit" class="btn btn-white btn-raised btn-fab btn-round">
-                        <i class="material-icons">search</i>
-                    </button>
-                </form>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card card-background " style="background: url(images/businessAnalyst.jpg); ">
-                    <div class="card-body  myCardCss">
-                        <h3 class="card-title"><span style="color: red">Company Name</span> <br> </h3><br>
-                        <p class="card-description" style="color: white">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum
-                        </p>
-                        <img src="images/mars Logo.png" alt="Raised Image" class="rounded img-fluid" style="height: 50px;margin-top: 10px;margin-left: -10px"></a>
-                        <button class="btn btn-primary" style="background-color: orangered;margin-top: -70px; margin-left: 110px">Apply</button>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card card-background " style="background: url(images/businessAnalyst.jpg); ">
-                    <div class="card-body  myCardCss">
-                        <h3 class="card-title"><span style="color: red">Company Name</span> <br> </h3><br>
-                        <p class="card-description" style="color: white">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum
-                        </p>
-                        <img src="images/mars Logo.png" alt="Raised Image" class="rounded img-fluid" style="height: 50px;margin-top: 10px;margin-left: -10px"></a>
-                        <button class="btn btn-primary" style="background-color: orangered;margin-top: -70px; margin-left: 110px">Apply</button>
-
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-md-3">
-                <div class="card card-background " style="background: url(images/companyBusiness1.jpg); ">
-                    <div class="card-body  myCardCss">
-                        <h3 class="card-title"><span style="color: red">Company Name</span> <br> </h3><br>
-                        <p class="card-description" style="color: white">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum
-                        </p>
-                        <img src="images/mars Logo.png" alt="Raised Image" class="rounded img-fluid" style="height: 50px;margin-top: 10px;margin-left: -10px"></a>
-                        <button class="btn btn-primary" style="background-color: orangered;margin-top: -70px; margin-left: 110px">Apply</button>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card card-background " style="background: url(images/businessAnalyst.jpg); ">
-                    <div class="card-body  myCardCss">
-                        <h3 class="card-title"><span style="color: red">Company Name</span> <br> </h3><br>
-                        <p class="card-description" style="color: white">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum
-                        </p>
-                        <img src="images/mars Logo.png" alt="Raised Image" class="rounded img-fluid" style="height: 50px;margin-top: 10px;margin-left: -10px"></a>
-                        <button class="btn btn-primary" style="background-color: orangered;margin-top: -70px; margin-left: 110px">Apply</button>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-<!--<div class="main" >-->
-
-    <!--<div class="container-fluid"  >-->
-    <!--<div class="section text-center" >-->
-
-
-
-        <!--<div id="navigation-pills">-->
-<!--&lt;!&ndash;style="background-color: blue"&ndash;&gt;-->
-            <!--<div class="row" >-->
-                <!--<div class="col-lg-12 col-md-12" >-->
-
-                    <!--<ul class="nav nav-pills nav-pills-icons" role="tablist" style="margin-left: 400px;">-->
-                        <!--&lt;!&ndash;-->
-                                        <!--color-classes: "nav-pills-primary", "nav-pills-info", "nav-pills-success", "nav-pills-warning","nav-pills-danger"-->
-                                    <!--&ndash;&gt;-->
-                        <!--<li class="nav-item">-->
-                            <!--<a class="nav-link active" href="#dashboard-1" role="tab" data-toggle="tab" >-->
-                                <!--&lt;!&ndash;<i class="material-icons">dashboard</i> &ndash;&gt;-->
-                                <!--Software Engineering-->
-                            <!--</a>-->
-                        <!--</li>-->
-
-                        <!--<li class="nav-item">-->
-                            <!--<a class="nav-link " href="#schedule-1" role="tab" data-toggle="tab">-->
-                                <!--&lt;!&ndash;<i class="material-icons">schedule</i>&ndash;&gt;-->
-                                <!--Engineering-->
-                            <!--</a>-->
-                        <!--</li>-->
-                        <!--<li class="nav-item">-->
-                            <!--<a class="nav-link" href="#tasks-1" role="tab" data-toggle="tab">-->
-                                <!--&lt;!&ndash;<i class="material-icons">list</i> &ndash;&gt;-->
-                                <!--Business-->
-                            <!--</a>-->
-                        <!--</li>-->
-
-                        <!--<li class="nav-item">-->
-                            <!--<a class="nav-link" href="#tasks-1" role="tab" data-toggle="tab">-->
-                                <!--&lt;!&ndash;<i class="material-icons">list</i> &ndash;&gt;-->
-                                <!--Hotel-->
-                            <!--</a>-->
-                        <!--</li>-->
-
-                    <!--</ul>-->
-                    <!--<div class="tab-content tab-space">-->
-                        <!--<div class="tab-pane active" id="dashboard-1">-->
-
-                            <!---->
-                        <!--</div>-->
-                        <!--<div class="tab-pane" id="schedule-1">-->
-                            <!--Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.-->
-                            <!--<br>-->
-                            <!--<br>Dramatically maintain clicks-and-mortar solutions without functional solutions.-->
-                        <!--</div>-->
-                        <!--<div class="tab-pane" id="tasks-1">-->
-                            <!--Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas.-->
-                            <!--<br>-->
-                            <!--<br>Dynamically innovate resource-leveling customer service for state of the art customer service.-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-
-            <!--</div>-->
-        <!--</div>-->
-
-
-
-
-
-    <!--</div>-->
-  <!--</div>-->
-<!--</div>-->
-
-
-  <footer class="footer footer-default" >
-    <div class="container">
-      <nav class="float-left">
-        <ul>
-          <!--<li>-->
-          <!--<a href=" ">-->
-          <!--<img src="images/mars Logo.png" alt="Raised Image" class="img-raised rounded img-fluid" style="height:72px;width:200px;margin-top: -20px; "></a>-->
-          <!--</a>-->
-          <!--</li>-->
-          <li >
-            <a href="#" >
-              ABOUT US
-            </a>
-          </li>
-          <li >
-            <a href="#" >
-              CONTACT US
-            </a>
-          </li>
-          <li >
-            <a href="#" >
-              FAQ
-            </a>
-          </li>
-          <li >
-            <a href="#" >
-              Register
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="copyright float-right">
-        &copy;
-        <script>
-            document.write(new Date().getFullYear())
-        </script>, made with <i class="material-icons">favorite</i> by
-        <a href="https://www.creative-tim.com/" target="_blank">Mars</a> for a better web.
-        <div style=" margin-left: -750px">
-          <button class="btn btn-just-icon btn-twitter" >
-            <i class="fa fa-twitter"></i>
-          </button>
-          <button class="btn btn-just-icon  btn-facebook">
-            <i class="fa fa-facebook"> </i>
-          </button>
-
-          <button class="btn btn-just-icon  btn-google">
-            <i class="fa fa-google"> </i>
-          </button>
-
-          <button class="btn btn-just-icon  btn-linkedin">
-            <i class="fa fa-linkedin"></i>
-          </button>
-        </div>
-
-
-      </div>
-    </div>
-  </footer>
-
-
-
-    <!--   Core JS Files   -->
-    <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
-    <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
-    <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
-    <script src="./assets/js/plugins/moment.min.js"></script>
-    <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
-    <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
-    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-    <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
-
-    <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-    <script src="./assets/js/material-kit.js?v=2.0.5" type="text/javascript"></script>
-</body>
-
+		<!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+		<script src="./assets/js/material-kit.js?v=2.0.5" type="text/javascript"></script>
+	</body>
 </html>
